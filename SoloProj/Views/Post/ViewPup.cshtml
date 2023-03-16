@@ -1,0 +1,70 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Post
+
+<nav>
+    <h1 class="mainTitle"><a href="/dashboard">Paw-fect Match</a></h1>
+    <img class="imgHeader" src="https://www.svgheart.com/wp-content/uploads/2020/10/-236.png">
+    <a class="links" asp-area="" asp-controller="Post" asp-action="AddPup">Add Pup</a>
+    <a class="links" asp-area="" asp-controller="User" asp-action="Logout">Logout</a>
+</nav>
+<h2 class="viewPup">Is it just me or is there some real pet-tential here?</h2>
+<hr class="line">
+
+<h1 class="meet animate__animated animate__bounce">Meet @Model.Name!</h1>
+@* <div class="row"> *@
+<img class="viewImg" src="@Model.Img">
+<div class="column">
+    <p class="words">Owner: @Model.Creator.FirstName</h2>
+    <p class="words">Breed: @Model.Breed</p>
+    <p class="words">Gender: @Model.Gender</p>
+    <p class="words">Pup's Territory: @Model.Location</p>
+    <p class="words">Pup's bio: @Model.Bio</p>
+    <p class="words">Availability: </p>
+        @if (@Model.Monday)
+        {
+        <span>Monday</span>
+        }
+
+        @if (@Model.Tuesday)
+        {
+        <span>Tuesday</span>
+        }
+
+        @if (@Model.Wednesday)
+        {
+        <span>Wednesday</span>
+        }
+
+        @if (@Model.Thursday)
+        {
+        <span>Thursday</span>
+        }
+
+        @if (@Model.Friday)
+        {
+        <span>Friday</span>
+        }
+
+        @if (@Model.Saturday)
+        {
+        <span>Saturday</span>
+        }
+
+        @if (@Model.Sunday)
+        {
+        <span>Sunday</span>
+        }
+</div>
+@* </div> *@
+
+<div class="userLinks">
+    @if (@Model.UserId == @Context.Session.GetInt32("uid"))
+    {
+        <a href="/dashboard/edit/@Model.PostId"><button class="button-56">Edit Your Pup</button></a>
+        <a href="/dashboard/delete/@Model.PostId"><button class="button-56">Delete Your Pup</button></a>
+    }
+    @* <p>Likes: @Model.PupLike</p> *@
+
+</div>

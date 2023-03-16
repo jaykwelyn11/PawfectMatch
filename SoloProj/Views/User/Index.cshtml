@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Paw-fect Match";
+}
+
+
+
+<div class="container">
+    <h1 class="indexhead animate__animated animate__bounce">Welcome to Paw-fect Match!</h1>
+
+
+    <div class="row mt-5">
+        <div class="col-md">
+            @await Html.PartialAsync("_Register")
+        </div>
+        <div class="col-md">
+            @await Html.PartialAsync("_Login")
+        </div>
+    </div>
+</div>

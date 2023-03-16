@@ -1,0 +1,88 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Post
+
+<nav>
+    <h1 class="mainTitle"><a href="/dashboard">Paw-fect Match</a></h1>
+    <img class="imgHeader" src="https://www.svgheart.com/wp-content/uploads/2020/10/-236.png">
+    <a class="links" asp-area="" asp-controller="Post" asp-action="AddPup">Add Pup</a>
+    <a class="links" asp-area="" asp-controller="User" asp-action="Logout">Logout</a>
+</nav>
+<h2 class="quote">Welcome to the Bark Side!</h2>
+
+<hr class="line">
+
+
+<h1 class="viewPup">Edit Your Pup's Page</h1>
+<form class="shadow p-3" action="/dashboard/updatePup/@Model.PostId" method="Post">
+
+    <div class="mb-3">
+        <label asp-for="Img">Cutest image of your pup (URL format please)</label>
+        <span asp-validation-for="Img" class="text-danger font-weight-bold"></span>
+        <input class="form-control" asp-for="Img">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Name">Name of your pup :</label>
+        <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
+        <input class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Gender">Gender :</label>
+        <span asp-validation-for="Gender" class="text-danger font-weight-bold"></span>
+        <input class="form-control" asp-for="Gender">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Breed">Breed :</label>
+        <span asp-validation-for="Breed" class="text-danger font-weight-bold"></span>
+        <input class="form-control" asp-for="Breed">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Location">Your pup's territory : (location)</label>
+        <span asp-validation-for="Location" class="text-danger font-weight-bold"></span>
+        <input class="form-control" asp-for="Location">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Bio">Bio of your pup please :</label>
+        <span asp-validation-for="Bio" class="text-danger font-weight-bold"></span>
+        <input class="form-control" asp-for="Bio">
+    </div>
+    <h2 class="availability">Availability:</h2>
+    <div class="mb-3">
+        <label asp-for="Monday"></label>
+        <span asp-validation-for="Monday" class="text-danger font-weight-bold"></span>
+        <input asp-for="Monday">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Tuesday"></label>
+        <span asp-validation-for="Tuesday" class="text-danger font-weight-bold"></span>
+        <input asp-for="Tuesday">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Wednesday"></label>
+        <span asp-validation-for="Wednesday" class="text-danger font-weight-bold"></span>
+        <input asp-for="Wednesday">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Thursday"></label>
+        <span asp-validation-for="Thursday" class="text-danger font-weight-bold"></span>
+        <input asp-for="Thursday">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Friday"></label>
+        <span asp-validation-for="Friday" claFridayss="text-danger font-weight-bold"></span>
+        <input asp-for="Friday">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Saturday"></label>
+        <span asp-validation-for="Saturday" class="text-danger font-weight-bold"></span>
+        <input asp-for="Saturday">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Sunday"></label>
+        <span asp-validation-for="Sunday" class="text-danger font-weight-bold"></span>
+        <input asp-for="Sunday">
+    </div>
+
+    <button class="button-56">Update Pup</button>
+</form>

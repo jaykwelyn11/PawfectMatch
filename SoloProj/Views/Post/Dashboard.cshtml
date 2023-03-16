@@ -1,0 +1,61 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+
+<script src="code.js"></script>
+
+
+<nav>
+    <h1 class="mainTitle"><a href="/dashboard">Paw-fect Match</a></h1>
+    <img class="imgHeader" src="https://www.svgheart.com/wp-content/uploads/2020/10/-236.png">
+    <a class="links" asp-area="" asp-controller="Post" asp-action="AddPup">Add Pup</a>
+    <a class="links" asp-area="" asp-controller="User" asp-action="Logout">Logout</a>
+</nav>
+<h2 class="quote">Welcome to the Bark Side!</h2>
+<hr class="line">
+
+
+<div class="allPosts">
+    @model List<Post>
+
+    @foreach (Post p in Model)
+    {
+        <div class="position-relative">
+            <div class="row">
+                <a class="rowImage" href="/dashboard/@p.PostId"><img src="@p.Img"></a>
+                <h3 class="name"><a class="name" href="/dashboard/@p.PostId">@p.Name</a></h3>
+                <p class="words">Owner: @p.Creator.FirstName</p>
+                @* <p class="words">Gender: @p.Gender</p> *@
+                @* <p>Breed: @p.Breed</p> *@
+                <p class="words">Territory: @p.Location</p>
+                @* <p>Bio: @p.Bio</p> *@
+            </div>
+            <div class="theLikes">
+                <p class="words">Future pup dates with: </p>
+                @foreach (UserLike like in p.PupLike)
+                {
+                    <p class="userlikeList"> @like.User.FirstName, </p>
+                }
+                @{
+                    bool alreadyLiked = p.PupLike.Any(like => like.UserId == Context.Session.GetInt32("uid"));
+                }
+
+                <section class="likeList">
+                    <form class="likeform" asp-controller="Post" asp-action="Like" asp-route-postId="@p.PostId"
+                    method="POST">
+                        <button class="like-button">
+                            @if (alreadyLiked)
+                            {
+                                <span>Remove pup date</span>
+                            }
+                            else
+                            {
+                                <span>I want a pup date!</span>
+                            }
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    }
