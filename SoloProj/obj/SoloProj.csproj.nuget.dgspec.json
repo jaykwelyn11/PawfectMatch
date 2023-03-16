@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\SoloProject\\SoloProj\\SoloProj.csproj": {}
+    "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\PawfectMatch\\SoloProj\\SoloProj.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\SoloProject\\SoloProj\\SoloProj.csproj": {
+    "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\PawfectMatch\\SoloProj\\SoloProj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\SoloProject\\SoloProj\\SoloProj.csproj",
+        "projectUniqueName": "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\PawfectMatch\\SoloProj\\SoloProj.csproj",
         "projectName": "SoloProj",
-        "projectPath": "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\SoloProject\\SoloProj\\SoloProj.csproj",
+        "projectPath": "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\PawfectMatch\\SoloProj\\SoloProj.csproj",
         "packagesPath": "C:\\Users\\Jacquelyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\SoloProject\\SoloProj\\obj\\",
+        "outputPath": "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\PawfectMatch\\SoloProj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jacquelyn\\AppData\\Roaming\\NuGet\\NuGet.Config"

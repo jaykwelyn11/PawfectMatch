@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BHYdK2O9sNYDfJC32R6MDE6MDuIjRf9frLVTc121XG6N0co/xdQ5Mce5X0g18BC9LJzrrHdnCBv6ebsz2iGWbg==",
+  "dgSpecHash": "SHJQnwhAOUnofPDPCszS+lk1bQPfGMzj/fV2ZrPfxNYbMoEAyMz8l75njL/U+DkuAMozLOCbHT13y41KpH3toA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\SoloProject\\SoloProj\\SoloProj.csproj",
+  "projectFilePath": "C:\\Users\\Jacquelyn\\OneDrive\\Documents\\CodingDojo2023\\PawfectMatch\\SoloProj\\SoloProj.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jacquelyn\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Jacquelyn\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",

@@ -316,7 +316,7 @@ nav {
 }
 
 .rowImage img{
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
   border-radius: 50px;
   transition: 1s ease;
@@ -505,6 +505,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 50px 0 0 0;
+  max-width: 80%;
 }
 
 .buttonrando {
